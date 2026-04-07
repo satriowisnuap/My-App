@@ -1,0 +1,140 @@
+.container {
+  min-height: calc(100vh - 70px);
+  padding: 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background: #fff;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* CTA BUTTON */
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.primaryBtn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 2px solid #3b82f6;
+  background: transparent;
+  color: #3b82f6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondaryBtn:hover {
+  background: #3b82f6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* PROFILE SECTION */
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TEXT */
+.name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.role {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background: #3b82f6;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+}
