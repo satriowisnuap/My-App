@@ -1,0 +1,115 @@
+.container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 20px;
+}
+
+/* AVATAR */
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+/* TITLE */
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* CONTENT */
+.welcome {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 5px 0;
+  color: #0f172a;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.divider {
+  width: 40px;
+  height: 3px;
+  background: #3b82f6;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.backBtn {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.backBtn:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
