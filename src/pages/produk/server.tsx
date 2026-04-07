@@ -19,7 +19,7 @@ export default HalamanProdukServer;
 
 export async function getServerSideProps() {
   try {
-    const res = await fetch("http://localhost:3000/api/produk");
+    const res = await fetch(process.env.NEXT_PUBLIC_API_URL!);
     const response = await res.json();
 
     // console.log("Data produk yang diambil dari API:", response);
