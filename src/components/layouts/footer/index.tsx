@@ -1,4 +1,5 @@
 import style from "@/styles/Footer.module.scss";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -20,10 +21,10 @@ const Footer = () => {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link href="/profile">About</Link>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <Link href="/produk">Projects</Link>
             </li>
           </ul>
         </div>
@@ -31,9 +32,11 @@ const Footer = () => {
         <div className={style.footerSocial}>
           <h3>Connect</h3>
           <div className={style.socialIcons}>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a href="https://www.instagram.com/satrwisn/">Instagram</a>
+            <a href="https://www.linkedin.com/in/satrio-wisnu-adi-pratama-79776928a/">
+              LinkedIn
+            </a>
+            <a href="https://github.com/satriowisnuap">GitHub</a>
           </div>
         </div>
       </div>

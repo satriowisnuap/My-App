@@ -18,6 +18,7 @@ const TampilanProduk = ({ products }: { products: ProductType[] }) => {
   return (
     <div className={styles.produk}>
       <h1 className={styles.produk__title}>Daftar Produk</h1>
+      {/* CONTENT */}
       <div className={styles.produk__content}>
         {showProduct && products.length > 0
           ? products.map((product: ProductType) => (
@@ -58,6 +59,13 @@ const TampilanProduk = ({ products }: { products: ProductType[] }) => {
                 <div className={styles.produk__content__skeleton__price}></div>
               </div>
             ))}
+      </div>
+      <br />
+      <br />
+      <div className={styles.produk__header}>
+        <Link href="/" className={styles.produk__back}>
+          ← Kembali ke Home
+        </Link>
       </div>
     </div>
   );
