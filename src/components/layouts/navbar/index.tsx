@@ -1,6 +1,6 @@
 import Script from "next/dist/client/script";
 import Image from "next/image";
-import styles from "./navbar.module.css";
+import styles from "@/styles/Navbar.module.scss";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
