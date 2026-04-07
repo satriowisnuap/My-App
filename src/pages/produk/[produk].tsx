@@ -45,7 +45,7 @@ export async function getServerSideProps({
   params: { produk: string };
 }) {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/${params.produk}`,
+    `${process.env.NEXT_PUBLIC_API_URL}/api/produk/${params.produk}`,
   );
   const respone = await res.json();
   // console.log("Data produk yang diambil:", respone);
