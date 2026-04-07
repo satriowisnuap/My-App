@@ -20,7 +20,9 @@ export default function Home() {
           </p>
 
           <div className={styles.cta}>
-            <button className={styles.primaryBtn}>Get Started</button>
+            <Link href="/produk">
+              <button className={styles.primaryBtn}>View Product</button>
+            </Link>
             <Link href="/profile">
               <button className={styles.secondaryBtn}>Learn More</button>
             </Link>

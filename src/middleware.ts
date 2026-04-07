@@ -13,4 +13,5 @@ export default withAuth(MainMiddleware, [
   "/admin",
   "/editor",
   "/produk",
+  "/about",
 ]);

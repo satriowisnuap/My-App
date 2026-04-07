@@ -16,6 +16,11 @@ export default function withAuth(
   return async (req: NextRequest, next: NextFetchEvent) => {
     const pathname = req.nextUrl.pathname;
 
+    // IZINKAN HOME TANPA LOGIN
+    if (pathname === "/") {
+      return middleware(req, next);
+    }
+
     if (requireAuth.includes(pathname)) {
       const token = await getToken({
         req,
