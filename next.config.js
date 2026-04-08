@@ -29,6 +29,11 @@ const nextConfig = {
         hostname: "www.skatetilldeath.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "id-live-01.slatic.net",
+        pathname: "/**",
+      },
     ],
   },
 };
